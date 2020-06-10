@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="崬少"><meta name="copyright" content="崬少"><meta name="generator" content="Hexo 4.2.1"><meta name="theme" content="hexo-theme-yun"><title>Markdown Basic Syntax | 崬少的小站</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;family=Source+Code+Pro&amp;display=swap" media="none" onload="this.media='all'"><script src="//at.alicdn.com/t/font_1140697_pem9yni52s.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="dns-prefetch" href="https://cos.yunyoujun.cn"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><link rel="alternate" href="/atom.xml" title="崬少的小站"><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"root":"/","title":"云游君的小站","version":"0.8.1","anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"algolia":{"appID":"CJXXAGRCYN","apiKey":"ae1966d2aeab22bf9335679f45d2cd9a","indexName":"my-hexo-blog","hits":{"per_page":8},"labels":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容: ${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=UA-121354150-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-121354150-1');</script><script data-ad-client="ca-pub-2245427233262012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M9KWR9L');</script><!-- End Google Tag Manager --><meta name="description" content="This post is originated from here and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown Basic Syntax">
+<meta property="og:url" content="https://zhujiandong.cn/2019/12/02/Markdown-Basic-Syntax/index.html">
+<meta property="og:site_name" content="崬少的小站">
+<meta property="og:description" content="This post is originated from here and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hexo.io/icon/favicon-196x196.png">
+<meta property="og:image" content="https://hexo.io/icon/favicon-196x196.png">
+<meta property="og:image" content="https://img.youtube.com/vi/ARted4RniaU/0.jpg">
+<meta property="og:image" content="https://img.youtube.com/vi/ARted4RniaU/0.jpg">
+<meta property="article:published_time" content="2019-12-02T00:00:00.000Z">
+<meta property="article:modified_time" content="2020-02-18T00:00:00.000Z">
+<meta property="article:author" content="崬少">
+<meta property="article:tag" content="Test">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hexo.io/icon/favicon-196x196.png"><script src="/js/ui/mode.js"></script><link rel="alternate" href="/atom.xml" title="崬少的小站" type="application/atom+xml">
+</head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle sidebar-toggle-fixed hty-icon-button"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><aside class="sidebar"><script defer src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="崬少"><img width="96" loading="lazy" src="/images/avatar.jpg" alt="崬少"></a><div class="site-author-name"><a href="/about/">崬少</a></div><a class="site-name" href="/about/site.html">崬少的小站</a><sub class="site-subtitle">希望能成为一个有趣的人</sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item site-state-posts"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">124</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">24</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">92</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=910426929&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/YunYouJun" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/jizhideyunyoujun" title="微博" target="_blank" style="color:#E6162D"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.douban.com/people/yunyoujun/" title="豆瓣" target="_blank" style="color:#007722"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douban-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=247102977" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/yunyoujun/" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/1579790" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/YunYouJun" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/elpsycn" title="Telegram Channel" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@yunyoujun.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="喜欢的女孩子" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Headers"><span class="toc-number">1.</span> <span class="toc-text">Headers</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#H1"><span class="toc-number">2.</span> <span class="toc-text">H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#H2"><span class="toc-number">2.1.</span> <span class="toc-text">H2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#H3"><span class="toc-number">2.1.1.</span> <span class="toc-text">H3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#H4"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">H4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#H5"><span class="toc-number">2.1.1.1.1.</span> <span class="toc-text">H5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#H6"><span class="toc-number">2.1.1.1.1.1.</span> <span class="toc-text">H6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Alt-H1"><span class="toc-number">3.</span> <span class="toc-text">Alt-H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Alt-H2"><span class="toc-number">3.1.</span> <span class="toc-text">Alt-H2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emphasis"><span class="toc-number">3.2.</span> <span class="toc-text">Emphasis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lists"><span class="toc-number">3.3.</span> <span class="toc-text">Lists</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inline-HTML"><span class="toc-number">3.4.</span> <span class="toc-text">Inline HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Links"><span class="toc-number">3.5.</span> <span class="toc-text">Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Images"><span class="toc-number">3.6.</span> <span class="toc-text">Images</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-and-Syntax-Highlighting"><span class="toc-number">3.7.</span> <span class="toc-text">Code and Syntax Highlighting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tables"><span class="toc-number">3.8.</span> <span class="toc-text">Tables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MathJax"><span class="toc-number">3.9.</span> <span class="toc-text">MathJax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blockquotes"><span class="toc-number">3.10.</span> <span class="toc-text">Blockquotes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Horizontal-Rule"><span class="toc-number">3.11.</span> <span class="toc-text">Horizontal Rule</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Line-Breaks"><span class="toc-number">3.12.</span> <span class="toc-text">Line Breaks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Youtube-videos"><span class="toc-number">3.13.</span> <span class="toc-text">Youtube videos</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://zhujiandong.cn/2019/12/02/Markdown-Basic-Syntax/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="崬少"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="崬少的小站"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Markdown Basic Syntax<a class="post-edit-link" href="https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/_posts/Markdown-Basic-Syntax.md" target="_blank" title="编辑" rel="noopener"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-edit-line"></use></svg></a></h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2019-12-02 08:00:00" itemprop="dateCreated datePublished" datetime="2019-12-02T08:00:00+08:00">2019-12-02</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2020-02-18 08:00:00" itemprop="dateModified" datetime="2020-02-18T08:00:00+08:00">2020-02-18</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">27k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">48 分钟</span></span></span><span class="leancloud_visitors" id="/2019/12/02/Markdown-Basic-Syntax/" data-flag-title="Markdown Basic Syntax"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"><span class="post-category"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span> <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/Blog/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">Blog</span></a></span> > <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/Markdown/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">Markdown</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/Test/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">Test</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content post-markdown"><p>This post is originated from <a href="//gist.github.com/apackeer/4159268" target="_blank" rel="noopener">here</a> and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.</p>
+<a id="more"></a>
+
+<hr>
+<h1 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line"><span class="section">#### H4</span></span><br><span class="line"><span class="section">##### H5</span></span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"></span><br><span class="line">Alternatively, for H1 and H2, an underline-ish style:</span><br><span class="line"></span><br><span class="line">Alt-H1</span><br><span class="line">======</span><br><span class="line"></span><br><span class="line">Alt-H2</span><br><span class="line">------</span><br></pre></td></tr></table></figure>
+
+<h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="Alt-H1"><a href="#Alt-H1" class="headerlink" title="Alt-H1"></a>Alt-H1</h1><h2 id="Alt-H2"><a href="#Alt-H2" class="headerlink" title="Alt-H2"></a>Alt-H2</h2><h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Emphasis, aka italics, with <span class="emphasis">*asterisks*</span> or <span class="emphasis">_underscores_</span>.</span><br><span class="line"></span><br><span class="line">Strong emphasis, aka bold, with <span class="strong">**asterisks**</span> or <span class="strong">__underscores__</span>.</span><br><span class="line"></span><br><span class="line">Combined emphasis with <span class="strong">**asterisks and _underscores_*</span>*.</span><br><span class="line"></span><br><span class="line">Strikethrough uses two tildes. ~~Scratch this.~~</span><br></pre></td></tr></table></figure>
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>First ordered list item</span><br><span class="line"><span class="bullet">2. </span>Another item</span><br><span class="line"><span class="bullet">  * </span>Unordered sub-list.</span><br><span class="line"><span class="bullet">1. </span>Actual numbers don't matter, just that it's a number</span><br><span class="line"><span class="bullet">  1. </span>Ordered sub-list</span><br><span class="line"><span class="bullet">4. </span>And another item.</span><br><span class="line"></span><br><span class="line">   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).</span><br><span class="line"></span><br><span class="line">   To have a line break without a paragraph, you will need to use two trailing spaces.  </span><br><span class="line">   Note that this line is separate, but within the same paragraph.  </span><br><span class="line">   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>Unordered list can use asterisks</span><br><span class="line"><span class="bullet">- </span>Or minuses</span><br><span class="line"><span class="bullet">+ </span>Or pluses</span><br><span class="line"><span class="bullet">- </span>Paragraph In unordered list</span><br><span class="line"></span><br><span class="line">  For example like this.</span><br><span class="line"></span><br><span class="line">Common Paragraph with some text.</span><br><span class="line">And more text.</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>First ordered list item</p>
+</li>
+<li><p>Another item</p>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+</li>
+<li><p>Actual numbers don’t matter, just that it’s a number</p>
+<ol>
+<li>Ordered sub-list</li>
+</ol>
+</li>
+<li><p>And another item.</p>
+<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we’ll use three here to also align the raw Markdown).</p>
+<p>To have a line break without a paragraph, you will need to use two trailing spaces.<br>Note that this line is separate, but within the same paragraph.<br>(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>Or pluses</li>
+</ul>
+<ul>
+<li><p>Paragraph In unordered list</p>
+<p>For example like this.</p>
+</li>
+</ul>
+<p>Common Paragraph with some text.<br>And more text.</p>
+<h2 id="Inline-HTML"><a href="#Inline-HTML" class="headerlink" title="Inline HTML"></a>Inline HTML</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span>To reboot your computer, press <span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>ctrl<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>alt<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>+<span class="xml"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span></span>del<span class="xml"><span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span>.<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
+
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;dt&gt;Definition list&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="code">    &lt;dt&gt;Markdown in HTML&lt;/dt&gt;</span></span><br><span class="line"><span class="code">    &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+
+<dl>
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+<pre><code>&lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+&lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;</code></pre></dl>
+
+
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">I'm an inline-style link</span>](<span class="link">//www.google.com</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I'm an inline-style link with title</span>](<span class="link">//www.google.com "Google's Homepage"</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">I'm a reference-style link</span>][<span class="symbol">Arbitrary case-insensitive reference text</span>]</span><br><span class="line"></span><br><span class="line">[<span class="string">I'm a relative reference to a repository file</span>](<span class="link">../blob/master/LICENSE</span>)</span><br><span class="line"></span><br><span class="line">[<span class="string">You can use numbers for reference-style link definitions</span>][<span class="symbol">1</span>]</span><br><span class="line"></span><br><span class="line">Or leave it empty and use the [link text itself]</span><br><span class="line"></span><br><span class="line">Some text to show that the reference links can follow later.</span><br><span class="line"></span><br><span class="line">[<span class="symbol">arbitrary case-insensitive reference text</span>]: <span class="link">//hexo.io</span></span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">//hexo.io/docs/</span></span><br><span class="line">[<span class="symbol">link text itself</span>]: <span class="link">//hexo.io/api/</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="//www.google.com" target="_blank" rel="noopener">I’m an inline-style link</a></p>
+<p><a href="//www.google.com" target="_blank" rel="noopener" title="Google&#39;s Homepage">I’m an inline-style link with title</a></p>
+<p><a href="//hexo.io" target="_blank" rel="noopener">I’m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
+<p><a href="//hexo.io/docs/" target="_blank" rel="noopener">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="//hexo.io/api/" target="_blank" rel="noopener">link text itself</a></p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hover to see the title text:</span><br><span class="line"></span><br><span class="line">Inline-style:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">//hexo.io/icon/favicon-196x196.png "Logo Title Text 1"</span>)</span><br><span class="line"></span><br><span class="line">Reference-style:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">//hexo.io/icon/favicon-196x196.png "Logo Title Text 2"</span></span><br></pre></td></tr></table></figure>
+
+<p>hover to see the title text:</p>
+<p>Inline-style:</p>
+<p><img src="//hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 1" loading="lazy"></p>
+<p>Reference-style:<br><img src="//hexo.io/icon/favicon-196x196.png" alt="alt text" title="Logo Title Text 2" loading="lazy"></p>
+<h2 id="Code-and-Syntax-Highlighting"><a href="#Code-and-Syntax-Highlighting" class="headerlink" title="Code and Syntax Highlighting"></a>Code and Syntax Highlighting</h2><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">"JavaScript syntax highlighting"</span>;</span><br><span class="line">alert(s);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">"Python syntax highlighting"</span></span><br><span class="line"><span class="keyword">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">No language indicated, so no syntax highlighting.</span><br><span class="line">But let&#39;s throw in a &lt;b&gt;tag&lt;&#x2F;b&gt;.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|                  | ASCII                           | HTML                          |</span><br><span class="line">| ---------------- | ------------------------------- | ----------------------------- |</span><br><span class="line">| Single backticks | <span class="code">`'Isn't this fun?'`</span>             | 'Isn't this fun?'             |</span><br><span class="line">| Quotes           | <span class="code">`"Isn't this fun?"`</span>             | "Isn't this fun?"             |</span><br><span class="line">| Dashes           | <span class="code">`-- is en-dash, --- is em-dash`</span> | -- is en-dash, --- is em-dash |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Single backticks</td>
+<td><code>&#39;Isn&#39;t this fun?&#39;</code></td>
+<td>‘Isn’t this fun?’</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>&quot;Isn&#39;t this fun?&quot;</code></td>
+<td>“Isn’t this fun?”</td>
+</tr>
+<tr>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>– is en-dash, — is em-dash</td>
+</tr>
+</tbody></table>
+<p>Colons can be used to align columns.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Tables        |      Are      | Cool |</span><br><span class="line">| ------------- | :-----------: | ---: |</span><br><span class="line">| col 3 is      | right-aligned |      |</span><br><span class="line">| col 2 is      |   centered    |      |</span><br><span class="line">| zebra stripes |   are neat    |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<p>The outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| | Markdown | Less           | Pretty     |     |</span><br><span class="line">| | ------------- | --------------- | ---------- |------- |</span><br><span class="line">| | <span class="emphasis">*Still*</span>   | <span class="code">`renders`</span> | <span class="strong">**nicely**</span> | |</span><br><span class="line">| | 1               | 2                 | 3          |          |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<h2 id="MathJax"><a href="#MathJax" class="headerlink" title="MathJax"></a>MathJax</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$\sum_&#123;i&#x3D;0&#125;^n i^2 &#x3D; \frac&#123;(n^2+n)(2n+1)&#125;&#123;6&#125;$$</span><br><span class="line">$$</span><br><span class="line">f(n) &#x3D;</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line">\frac&#123;n&#125;&#123;2&#125;,  &amp; \text&#123;if $n$ is even&#125; \\\\[2ex]</span><br><span class="line">3n+1, &amp; \text&#123;if $n$ is odd&#125;</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$<br>$$<br>f(n) =<br>\begin{cases}<br>\frac{n}{2},  &amp; \text{if $n$ is even} \\[2ex]<br>3n+1, &amp; \text{if $n$ is odd}<br>\end{cases}<br>$$</p>
+<blockquote>
+<p>You can find more information about <strong>LaTeX</strong> mathematical expressions <a href="//math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">here</a>.</p>
+</blockquote>
+<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
+</blockquote>
+<p>Quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<h2 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h2><p>Three or more…</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">Hyphens</span><br><span class="line"></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"></span><br><span class="line">Asterisks</span><br><span class="line"></span><br><span class="line"><span class="emphasis">___</span></span><br><span class="line"></span><br><span class="line">Underscores</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Here's a line for us to start with.</span><br><span class="line"></span><br><span class="line">This line is separated from the one above by two newlines, so it will be a <span class="emphasis">*separate paragraph*</span>.</span><br><span class="line"></span><br><span class="line">This line is also a separate paragraph, but...</span><br><span class="line">This line is only separated by a single newline, so it's a separate line in the <span class="emphasis">*same paragraph*</span>.</span><br></pre></td></tr></table></figure>
+
+
+<p>Here’s a line for us to start with.</p>
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+<p>This line is also a separate paragraph, but…<br>This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+<hr>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">This is a regular paragraph.</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;tr&gt;</span></span><br><span class="line"><span class="code">        &lt;td&gt;Foo&lt;/td&gt;</span></span><br><span class="line"><span class="code">    &lt;/tr&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">This is another regular paragraph.</span><br></pre></td></tr></table></figure>
+
+<p>This is a regular paragraph.</p>
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+<p>This is another regular paragraph.</p>
+<h2 id="Youtube-videos"><a href="#Youtube-videos" class="headerlink" title="Youtube videos"></a>Youtube videos</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"//www.youtube.com/watch?feature=player_embedded&amp;v=ARted4RniaU</span></span></span></span><br><span class="line"><span class="xml">" target="_blank"&gt;</span><span class="xml"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"//img.youtube.com/vi/ARted4RniaU/0.jpg"</span></span></span></span><br><span class="line"><span class="xml">alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;</span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line">Pure markdown version:</span><br><span class="line"></span><br><span class="line">[<span class="string">![IMAGE ALT TEXT HERE</span>](<span class="link">//img.youtube.com/vi/ARted4RniaU/0.jpg</span>)](<span class="link">//www.youtube.com/watch?v=ARted4RniaU</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="//www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+" target="_blank"><img src="//img.youtube.com/vi/ARted4RniaU/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+<p>Pure markdown version:</p>
+<p><a href="//www.youtube.com/watch?v=ARted4RniaU" target="_blank" rel="noopener"><img src="//img.youtube.com/vi/ARted4RniaU/0.jpg" alt="IMAGE ALT TEXT HERE" loading="lazy"></a></p>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">我很可爱，请给我钱</div><div id="qr" style="display:none;"><div style="display:inline-block"><a href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg" target="_blank" rel="noopener"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png" target="_blank" rel="noopener"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg" target="_blank" rel="noopener"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>崬少</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://zhujiandong.cn/2019/12/02/Markdown-Basic-Syntax/" title="Markdown Basic Syntax">https://zhujiandong.cn/2019/12/02/Markdown-Basic-Syntax/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2020/01/14/note/methods-for-inverse-kinematics/" rel="prev" title="使用 CCD 或 FABRIK 实现逆向动力学"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">使用 CCD 或 FABRIK 实现逆向动力学</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2019/10/30/share/how-much-3d-format/" rel="next" title="【转】三维文件格式知多少"><span class="post-nav-text">【转】三维文件格式知多少</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div id="comment"><div class="comment-tooltip text-center"><span>因为 Valine 我保不准哪天就会因为种种原因抛弃它了。</span><br><span>所以如果是重要的评论，建议跳转 GitHub Issues 发表。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br><a class="hty-button hty-button--raised" id="github-issues" href="https://github.com/YunYouJun/yunyoujun.github.io/issues?q=is:issue+Markdown Basic Syntax" target="_blank" rel="noopener">GitHub Issues</a></div><div id="valine-container"></div><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function initValine() {
+  const valineConfig = {"enable":true,"appId":"4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz","appKey":"9loqwF3UDklPDHaP9IN2uwN8","placeholder":"大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）","visitor":true,"recordIP":true,"enableQQ":true,"requiredFields":["nick","mail"],"avatar":null,"pageSize":10,"highlight":true,"el":"#valine-container","lang":"zh-cn"}
+  valineConfig.path = window.location.pathname
+  new Valine(valineConfig)
+}
+setTimeout(initValine, 1000)</script></div></main><footer class="sidebar-translate" id="footer"><div class="beian"><a rel="noopener" href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备17038157号</a></div><div class="copyright"><span>&copy; 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 崬少</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v4.2.1</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v0.8.1</span></div><div class="footer-custom-text"><a style="display:inline-block" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank" title="又拍云"><img height="30" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" alt="upyun"/></a></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script><script defer src="https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script><script defer src="/js/search/algolia-search.js"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"></div><div class="algolia-results"><div id="algolia-stats"></div><div id="algolia-hits"></div><div class="algolia-pagination" id="algolia-pagination"></div></div></div></div><script defer src="/js/utils.js"></script><script defer src="/js/hexo-theme-yun.js"></script></body></html>
