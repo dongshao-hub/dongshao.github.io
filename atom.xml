@@ -359,31 +359,6 @@
   </entry>
   
   <entry>
-    <title>人生不是一场马拉松</title>
-    <link href="https://zhujiandong.cn/2020/04/04/diary/life-is-not-a-marathon/"/>
-    <id>https://zhujiandong.cn/2020/04/04/diary/life-is-not-a-marathon/</id>
-    <published>2020-04-04T06:59:58.000Z</published>
-    <updated>2020-04-04T06:59:58.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;今天也继续跑着，每个人都是跑者，时钟无法暂停，时间往前不停流逝，这是一场不能回头的马拉松比赛。&lt;br&gt;边跟对手竞争着，边在时间洪流这条直路上跑着，想比别人跑得更快，相信前方有美好未来，相信一定有终点，人生是一场马拉松。&lt;br&gt;……&lt;br&gt;但真是如此吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="云游的小日记" scheme="https://zhujiandong.cn/categories/%E4%BA%91%E6%B8%B8%E7%9A%84%E5%B0%8F%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="随笔" scheme="https://zhujiandong.cn/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="日记" scheme="https://zhujiandong.cn/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>YunYouJun/hexo-theme-yun</title>
     <link href="https://zhujiandong.cn/2020/03/17/project/hexo-theme-yun/"/>
     <id>https://zhujiandong.cn/2020/03/17/project/hexo-theme-yun/</id>
@@ -536,6 +511,31 @@
       <category term="CDN" scheme="https://zhujiandong.cn/tags/CDN/"/>
     
       <category term="GitHub Pages" scheme="https://zhujiandong.cn/tags/GitHub-Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 陷阱</title>
+    <link href="https://zhujiandong.cn/2019/06/27/note/css-trap-note/"/>
+    <id>https://zhujiandong.cn/2019/06/27/note/css-trap-note/</id>
+    <published>2019-06-27T10:32:55.000Z</published>
+    <updated>2020-02-03T10:32:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS 的奇妙 Bug&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="云游的小笔记" scheme="https://zhujiandong.cn/categories/%E4%BA%91%E6%B8%B8%E7%9A%84%E5%B0%8F%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习" scheme="https://zhujiandong.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="笔记" scheme="https://zhujiandong.cn/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="CSS" scheme="https://zhujiandong.cn/tags/CSS/"/>
     
   </entry>
   
