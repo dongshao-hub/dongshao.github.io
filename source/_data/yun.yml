@@ -1,0 +1,122 @@
+mode: auto
+
+avatar:
+  url: /images/avatar.jpg
+
+reward_settings:
+  enable: true
+  comment: 我很可爱，请给我钱
+
+comment:
+  tips:
+    - 因为 Valine 我保不准哪天就会因为种种原因抛弃它了。
+    - 所以如果是重要的评论，建议跳转 GitHub Issues 发表。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+
+valine:
+  enable: true
+  appId: 4x0IwQ1sy95mOGQDTO8MYCeA-gzGzoHsz # your leancloud application appid
+  appKey: 9loqwF3UDklPDHaP9IN2uwN8 # your leancloud application appkey
+  # https://github.com/DesertsP/Valine-Admin
+  # https://valine.yunyoujun.cn
+  placeholder: 大佬求指教&nbsp_(:з」∠)_ （填写邮箱可以收到回复通知～）
+  visitor: true
+  recordIP: true
+  enableQQ: true
+  requiredFields:
+    - nick
+    - mail
+
+footer:
+  since: 2020
+  beian:
+    enable: true
+    icp: 苏ICP备17038157号
+  custom_text: <a style="display:inline-block" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank" title="又拍云"><img height="30" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png" alt="upyun"/></a>
+  # ...
+
+engine_search:
+  enable: false
+
+# If you want to use it, you need config algolia appID in _config.yml!!!
+# https://github.com/oncletom/hexo-algolia
+algolia_search:
+  enable: true
+  # ...
+
+google_adsense:
+  enable: true
+  client: ca-pub-2245427233262012
+
+google_analytics:
+  enable: true
+  id: UA-121354150-1
+
+post_edit:
+  enable: true
+  url: https://github.com/YunYouJun/yunyoujun.github.io/tree/hexo/source/
+
+albums:
+  enable: true
+
+girls:
+  enable: true
+
+tags:
+  动漫: crimson
+  Gulp: orange
+  H5: "#21374b"
+  学习: saddlebrown
+  Javascript: crimson
+  Git: royalblue
+  笔记: dimgray
+  分享: blue
+  随笔: mediumpurple
+  Webpack: "#d04d2d"
+  Linux: "#2577b1"
+  Vue: "#ccb44b"
+  Koa: "#DD306A"
+  CSS: midnightblue
+
+categories:
+  崬少的小视频: "#FB7299"
+
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 喜欢的女孩子
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+
+dns_prefetch:
+  - https://cos.yunyoujun.cn
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest
+
+menu:
+  custom:
+    title: 留言板
+    path: /about/#comment
+    icon: icon-clipboard-line
+
+cursor:
+  enable: true
+
+baidu_push: true
+
+wordcloud:
+  enable: true
+
+google_tagmanager:
+  enable: true
+  id: GTM-M9KWR9L
+
+bg_image:
+  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain.jpg
+  dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
+
+search:
+  dark_bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/mountain-blur-30px.jpg

@@ -1,0 +1,64 @@
+colors:
+  primary: "#92b4f2"
+
+google_adsense:
+  enable: false
+
+google_analytics:
+  enable: false
+
+bg_image:
+  enable: true
+  #   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/strange-storm-center.jpg
+  # dark: https://i.loli.net/2020/05/31/7GgqKXxIFJSLEpU.jpg
+  # dark: https://i.loli.net/2020/05/31/OxlvJGLbPD85hua.jpg
+  # ![strange-storm-center-blur-30px.jpg](https://i.loli.net/2020/05/31/HfhZPO2NSDBemai.jpg)
+
+pjax:
+  enable: true
+
+aplayer:
+  global: true
+  meting: true
+  widget:
+    enable: true
+    meting:
+      enable: false
+
+# wordcloud:
+#   enable: true
+
+valine:
+  enable: true
+
+disqus:
+  enable: false
+  shortname: yunyoujun
+
+disqusjs:
+  enable: false
+  shortname: yunyoujun
+  apikey: ouoGQCaamOKdJgyZU5DKcpFnRIg3SNzvk0nwygPtlcTRJuE68c8igvrZGW4wAJoN
+
+livere:
+  enable: false
+  uid: MTAyMC81MDE0Mi8yNjYzMg==
+
+# sidebar:
+#   tagcloud:
+#     enable: true
+
+trianglify:
+  enable: false
+
+# UI
+banner:
+  enable: true
+  cloud:
+    enable: false
+
+albums:
+  enable: true
+
+minivaline:
+  enable: false

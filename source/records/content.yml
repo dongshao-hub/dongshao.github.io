@@ -1,0 +1,55 @@
+# Sample
+- cover: /asset/img/author.medium.png # [empty] to use default cover
+  date: 2019/02 - LATEST # string
+  title: 耀 の 个人网站
+  type: # e.g. [empty] / books / article / paper / newspaper / report / picture / anime / video / movie / audio
+  author: jinyaoMa
+  source: "https://ma-jinyao.cn"
+  progress: Latest # format 'number/total' OR '100%' OR 'Complete', [empty] to use 'N/A', NO ALLOW SPACE
+  summary: 耀 の 个人网站 | Mark の Personal Website
+
+- cover: /extension/letter/icon.png
+  date: 2020/03 - 2020/03
+  title: Cover Letter Template/Generator
+  type:
+  author: jinyaoMa
+  source: "https://ma-jinyao.cn/extension/letter/english/"
+  progress: Latest
+  summary: Cover Letter
+
+- cover: /extension/resume/icon.png
+  date: 2020/02 - 2020/03
+  title: Resume Template/Generator
+  type:
+  author: jinyaoMa
+  source: "https://ma-jinyao.cn/extension/resume/english/"
+  progress: Latest
+  summary: My Resume
+
+- cover: /extension/palette/icon.png
+  date: 2020/04 - 2020/04
+  title: Color Palette
+  type:
+  author: jinyaoMa
+  source: "https://ma-jinyao.cn/extension/palette/"
+  progress: Complete
+  summary: Color Palette; 调色板; Color Extract; 颜色提取
+
+- cover: /extension/test/icon.png
+  date: 20??/?? - ????/??
+  title: Test
+  type:
+  author: jinyaoMa
+  source: "https://ma-jinyao.cn/extension/test/"
+  progress: 22%
+  summary: 2048 越改越多 bug，好久之前打的码了，音乐播放器也是很乱。这两东西基本上没啥用了，代码也没有复用价值，2048 的算法也就看看这样子
+
+# N/A
+- cover: # [empty] to use default cover
+  date: # string
+  title:
+  type: # e.g. [empty] / books / article / paper / newspaper / report / picture / anime / video / movie / audio
+  author:
+  source:
+  progress: # format 'number/total' OR '100%' OR 'Complete', [empty] to use 'N/A', NO ALLOW SPACE
+  summary:

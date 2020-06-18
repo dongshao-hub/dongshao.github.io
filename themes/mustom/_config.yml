@@ -1,0 +1,212 @@
+hexo: //hexo.io
+theme:
+  name: Mustom
+  url: //github.com/jinyaoMa/hexo-theme-mustom
+  author: jinyaoMa
+  link: /
+license:
+  url: //creativecommons.org/licenses/by-nc-sa/4.0/
+  image: /asset/img/by-nc-sa.svg
+  name: BY-NC-SA
+  icon: '<i class="fab fa-creative-commons"></i>'
+appleIcon: /asset/img/author.medium.png
+favicon:
+  small: /asset/img/icon.small.png
+  medium: /asset/img/icon.medium.png
+  large: /asset/img/icon.large.png
+author:
+  small: /asset/img/author.small.png
+  medium: /asset/img/author.medium.png
+  large: /asset/img/author.large.png
+hitokoto:
+  icon: '<i class="fas fa-circle-notch fa-fw"></i>'
+  image: /asset/img/qf3cu.huaji.png
+  api: //v1.hitokoto.cn
+  type: i # https://developer.hitokoto.cn/sentence/#请求参数
+  content: 感谢一言网(Hitokoto.cn)提供一句话服务
+  name: jinyaoMa
+brand:
+  icons:
+    posts: '<i class="fas fa-archive fa-fw"></i>'
+    categories: '<i class="fas fa-folder-open fa-fw"></i>'
+    tags: '<i class="fas fa-tags fa-fw"></i>'
+goingto:
+  icons:
+    top: '<i class="fas fa-arrow-up"></i>'
+    bottom: '<i class="fas fa-arrow-down"></i>'
+xdrawer:
+  icon: '<i class="fas fa-bars"></i>'
+xaside:
+  icon: '<i class="fas fa-chevron-right"></i>'
+xsearch:
+  icons:
+    search: '<i class="fas fa-search"></i>'
+    close: '<i class="fas fa-times"></i>'
+pather:
+  icon: '<i class="fas fa-home fa-fw"></i>'
+contact:
+  github:
+    url: //github.com/jinyaoMa
+    icon: '<i class="fab fa-github fa-fw"></i>'
+  email:
+    url: mailto:jinyao.ma@outlook.com
+    icon: '<i class="fas fa-envelope fa-fw"></i>'
+  qq:
+    url: tencent://Message/?uin=907881445
+    icon: '<i class="fab fa-qq fa-fw"></i>'
+menuicons:
+  main: '<i class="fas fa-sitemap fa-fw"></i>'
+  job: '<i class="fas fa-briefcase fa-fw"></i>'
+  others: '<i class="fas fa-ellipsis-h fa-fw"></i>'
+menus:
+  main:
+    home:
+      url: /
+      icon: '<i class="fas fa-home fa-fw"></i>'
+    archive:
+      url: /archives/
+      icon: '<i class="fas fa-archive fa-fw"></i>'
+    about:
+      url: /about/
+      icon: '<i class="fas fa-user fa-fw"></i>'
+  job:
+    resume:
+      url: /resume/
+      icon: '<i class="fas fa-paper-plane fa-fw"></i>'
+    letter:
+      url: /letter/
+      icon: '<i class="fas fa-file-contract fa-fw"></i>'
+  others:
+    library:
+      url: /library/
+      icon: '<i class="fas fa-box fa-fw"></i>'
+    icons:
+      url: /icons/
+      icon: '<i class="fas fa-icons fa-fw"></i>'
+    records:
+      url: /records/
+      icon: '<i class="fas fa-edit fa-fw"></i>'
+    gallery:
+      url: /gallery/
+      icon: '<i class="fas fa-images fa-fw"></i>'
+skinicon: '<i class="fas fa-tshirt fa-fw"></i>'
+skin:
+  default: "#000000"
+  gray: "#999999"
+  colorful: "linear-gradient(to bottom right,#ff3333 ,#66cc66 , #0099cc)"
+settingsicon: '<i class="fas fa-cog fa-fw"></i>'
+settings:
+  langshift: '<i class="fas fa-globe-asia fa-fw"></i>'
+  night: '<i class="fas fa-adjust fa-fw"></i>'
+  transfigure: '<i class="fas fa-robot fa-fw"></i>'
+  lyride: '<i class="fas fa-eye-slash fa-fw"></i>'
+  autoplay: '<i class="fas fa-play-circle fa-fw"></i>'
+footer:
+  icons:
+    pv: '<i class="fas fa-eye fa-fw"></i>'
+    uv: '<i class="fas fa-user-tie fa-fw"></i>'
+    wd: '<i class="fas fa-file-word fa-fw"></i>'
+panels:
+  categories: '<i class="fas fa-folder-open fa-fw"></i>'
+  tags: '<i class="fas fa-tags fa-fw"></i>'
+audioplayer:
+  icons:
+    caption: '<i class="fas fa-music fa-fw"></i>'
+    plus: '<i class="fas fa-plus fa-fw"></i>'
+meting:
+  server: netease
+  type: playlist
+  id: "4989572738"
+  theme: "#ff3300"
+  list_height: "297px"
+recentposts:
+  icons:
+    caption: '<i class="fas fa-clock fa-fw"></i>'
+    date: '<i class="fas fa-calendar-alt fa-fw"></i>'
+    updated: '<i class="fas fa-calendar-check fa-fw"></i>'
+    categories: '<i class="fas fa-folder-open fa-fw"></i>'
+comment:
+  icon: '<i class="fas fa-comments fa-fw"></i>'
+timeline:
+  icon: '<i class="fas fa-history fa-fw"></i>'
+post:
+  icons:
+    caption: '<i class="fas fa-file fa-fw"></i>'
+    date: '<i class="fas fa-calendar-alt fa-fw"></i>'
+    updated: '<i class="fas fa-calendar-check fa-fw"></i>'
+    categories: '<i class="fas fa-folder-open fa-fw"></i>'
+    wordcount: '<i class="fas fa-file-word fa-fw"></i>'
+    min2read: '<i class="fas fa-stopwatch fa-fw"></i>'
+    viewcount: '<i class="fas fa-eye fa-fw"></i>'
+    ending: '<i class="far fa-dot-circle fa-fw"></i>'
+  qrcode:
+    qq: /asset/img/qq.png
+    wechat: /asset/img/wechat.png
+page:
+  icon: '<i class="fas fa-file-alt fa-fw"></i>'
+toc:
+  icon: '<i class="fas fa-bookmark fa-fw"></i>'
+search:
+  close: '<i class="fas fa-times fa-fw"></i>'
+extension:
+  icons:
+    normal: /asset/img/start.png
+    reverse: /asset/img/start.reverse.png
+records:
+  icon: '<i class="fas fa-save fa-fw"></i>'
+  cover: /asset/img/qf3cu.temp.png
+  na: N/A
+gallery:
+  icon: '<i class="fas fa-image fa-fw"></i>'
+codelib:
+  icons:
+    log: '<i class="fab fa-readme fa-fw"></i>'
+    stack: '<i class="fas fa-layer-group fa-fw"></i>'
+iconlib:
+  icons:
+    log: '<i class="fab fa-readme fa-fw"></i>'
+    stack: '<i class="fas fa-grip-horizontal fa-fw"></i>'
+xcanvas:
+  icons:
+    normal: '<i class="fas fa-video"></i>'
+    close: '<i class="fas fa-video-slash"></i>'
+manifest:
+  path: /manifest.json
+  name: ma-jinyao.cn
+  short_name: jinyaoMa
+  icons:
+    - src: /asset/img/android-chrome-192x192.png
+      sizes: 192x192
+      type: image/png
+    - src: /asset/img/android-chrome-512x512.png
+      sizes: 512x512
+      type: image/png
+  start_url: /index.html
+  theme_color: "#000000"
+  background_color: "#ffffff"
+  display: standalone
+  orientation: portrait
+serviceWorker:
+  path: /sw.js
+  opts:
+    networkTimeoutSeconds: 5
+  routes:
+    - pattern: !!js/regexp /(hm.baidu.com|google.com|api.i-meto.com|github)/
+      strategy: networkOnly
+    - pattern: !!js/regexp /(icon-lib|font-mustom|MPlayer)/
+      strategy: networkOnly
+    - pattern: !!js/regexp /.*\/asset\/part\/.+\.(html)(\?.*)?$/
+      strategy: cacheFirst
+    - pattern: !!js/regexp /.+\.(jpg|jpeg|png|gif|svg|webp|ico|eot|ttf|woff|woff2|otf|mtn|moc)(\?.*)?$/
+      strategy: cacheFirst
+    - pattern: !!js/regexp /\//
+      strategy: networkFirst
+adframe:
+  icons:
+    qrcode: '<i class="fas fa-qrcode"></i>'
+    close: '<i class="fas fa-times-circle"></i>'
+  ad: /ad.png
+empty:
+  image: /asset/img/empty.min.png
+notification:
+  icon: '<i class="fas fa-info-circle"></i>'

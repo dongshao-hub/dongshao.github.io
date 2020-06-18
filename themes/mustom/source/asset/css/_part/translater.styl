@@ -1,0 +1,100 @@
+@keyframes translater-appear
+  from
+    opacity 0
+  to
+    opacity 1
+
+.p-translater
+  user-select none
+  line-height 3
+  font-size 0.88em
+  white-space normal
+  animation translater-appear 0.6s ease
+  transition transform 0.6s
+  position relative
+  z-index zIndex(10)
+  .p-translater-bar
+    border-radius $gap * 0.5
+    border 1px solid var(--color-clear)
+    background var(--color-background)
+    overflow hidden
+    > span
+      display block
+    .p-translater-bar-to, .p-translater-bar-zh, .p-translater-bar-en, .p-translater-bar-jp
+      float left
+      padding 0 1em
+    .p-translater-bar-copy
+      float right
+      padding 0 1em
+      background var(--color-clear)
+      cursor pointer
+      transition background 0.6s
+      @media (min-width: $app_mobile_width_min)
+        &:hover
+          color var(--color-background)
+          background var(--color-text)
+    .p-translater-bar-to
+      background var(--color-clear)
+    .p-translater-bar-zh, .p-translater-bar-en, .p-translater-bar-jp
+      cursor pointer
+      color var(--color-link)
+      position relative
+      font-weight bold
+      @media (min-width: $app_mobile_width_min)
+        &:before
+          content ''
+          position absolute
+          left 0
+          bottom 0
+          width 0
+          height 2px
+          background var(--color-link)
+          transition width 0.6s
+        &:hover
+          &:before
+            width 100%
+    .p-translater-bar-split
+      float left
+      font-weight bold
+  .p-translater-result
+    display none
+    border-radius $gap * 0.5
+    border 1px solid var(--color-clear)
+    background var(--color-background)
+    position absolute
+    // top 3em
+    line-height 1.5
+    width 100%
+    padding $gap * 2
+    p.error
+      font-weight bold
+      color var(--color-error)
+    p.result
+      font-weight bold
+    p.content
+      padding-top $gap * 2
+      text-indent 2em
+  &:before
+    content ''
+    pointer-events none
+    width 300vw
+    height 100%
+    position absolute
+    left -100vw
+    margin -1em
+    padding 1em
+    background var(--color-translater-highlight)
+    z-index -1
+    transition opacity 0.6s
+    opacity 0
+  @media (min-width: $app_mobile_width_min)
+    &.moved
+      &:before
+        opacity 1
+    &.active
+      .p-translater-bar
+        border-radius $gap * 0.5 $gap * 0.5 0 0
+      .p-translater-result
+        border-radius 0 0 $gap * 0.5 ($gap * 0.5)
+  @media (max-width: $app_mobile_width)
+    display none

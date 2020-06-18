@@ -1,0 +1,116 @@
+@keyframes audioplayer-appear
+  from
+    opacity 0
+  to
+    opacity 1
+
+.p-audioplayer
+  user-select none
+  width $aside_width - $gap * 8
+  margin $gap * 4
+  border-radius $gap * 0.5
+  border 1px solid var(--color-clear)
+  background var(--color-background)
+  white-space normal
+  animation panels-appear 0.6s ease
+  overflow hidden
+
+.p-audioplayer-caption
+  padding 0 $gap
+  font-size 0.8em
+  line-height 2.5
+  background var(--color-clear)
+  > i
+    margin-right $gap * 0.5
+
+.p-audioplayer-player
+  white-space normal
+  max-height $audioplayer_height + $audioplayer_list_height
+  .aplayer.aplayer-withlist
+    margin 0
+    box-shadow none
+    background none
+    .aplayer-pic
+      height $audioplayer_height - $gap
+      width $audioplayer_height - $gap
+      border $gap * 0.5 solid transparent
+      background-clip content-box
+    .aplayer-info
+      margin-left $audioplayer_height
+      height $audioplayer_height
+      padding 0 $gap $gap
+      border-bottom 1px solid var(--color-clear)
+      .aplayer-music
+        margin 0
+        padding $gap $gap * 0.5
+        user-select none
+      .aplayer-controller
+        .aplayer-time
+          button.aplayer-icon-order, button.aplayer-icon-loop
+            display inline-block
+          button.aplayer-icon-menu
+            display none
+    .aplayer-lrc
+      position fixed
+      left 0
+      bottom 0
+      margin 0
+      width 100%
+      pointer-events none
+      z-index zIndex(9)
+      height $font_size * 3 + $gap
+      padding 0 0 $gap 0
+      transition opacity 0.6s
+      &:before
+        background none
+      &:after
+        height $gap
+        background var(--color-audioplayer-lrc-background)
+      .aplayer-lrc-contents
+        user-select none
+        p
+          color var(--color-audioplayer-lrc)
+          opacity 0.9
+          &.aplayer-lrc-current
+            line-height $font_size * 2.5 !important
+            font-size $font_size * 2 !important
+            color var(--color-audioplayer-lrc-current)
+            font-weight bold
+            text-shadow 0 0 $font_size var(--color-background)
+            transition none
+    .aplayer-list
+      ol
+        &::-webkit-scrollbar
+          width $gap
+        &::-webkit-scrollbar-thumb
+          border-radius 0
+          background-color var(--color-text)
+        li
+          border-top 1px solid transparent
+          padding 0 $gap
+          &:hover
+            background var(--color-clear)
+          &.aplayer-list-light
+            background var(--color-clear)
+          .aplayer-list-index
+            display inline-block
+            width 2em
+            text-align center
+            margin-right $gap
+          .aplayer-list-author
+            padding-right $gap * 0.5
+
+@media (max-width: $app_mobile_width)
+  .p-audioplayer
+    width 100%
+    margin 0
+    border none
+    border-radius 0
+  .p-audioplayer-caption
+    text-align center
+    > i
+      display none
+  .aplayer-lrc
+    background var(--color-audioplayer-lrc-mobile-back)
+    border-top 1px solid var(--color-clear)
+    height 20vh !important

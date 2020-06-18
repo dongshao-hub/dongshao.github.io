@@ -1,0 +1,145 @@
+@keyframes codelib-appear
+  from
+    opacity 0
+  to
+    opacity 1
+
+.p-codelib
+  user-select none
+  overflow hidden
+  background var(--color-background)
+  animation codelib-appear 0.6s ease
+  @media (min-width: $app_mobile_width_min)
+    margin $gap * 4 0
+    border-radius $gap * 0.5
+    border 1px solid var(--color-clear)
+  ul
+    list-style none
+
+.p-codelib-caption
+  padding 0 $gap
+  font-size 0.8em
+  line-height 2.5
+  background var(--color-clear)
+  i
+    margin-right $gap * 0.5
+
+.p-codelib-readme
+  @media (min-width: $app_mobile_width_min)
+    padding $gap * 6 ($gap * 4)
+  @media (max-width: $app_mobile_width)
+    padding $gap * 5 ($gap)
+  h1:first-of-type
+    text-align center
+    padding-bottom 0.5em
+    @media (min-width: $app_mobile_width_min)
+      margin-bottom $gap * 6
+    @media (max-width: $app_mobile_width)
+      margin-bottom $gap * 5
+  .md
+    user-select text
+    overflow hidden
+    @media (min-width: $app_mobile_width_min)
+      max-height s('calc(100vh - %s - 3em - %s)', $progress_height, $gap * 24 + $font_size * 2)
+      padding 0 $gap * 2
+    @media (max-width: $app_mobile_width)
+      max-height s('calc(100vh - %s - 3em - %s)', $progress_height, $gap * 10 + $font_size * 4)
+      padding 0 $gap
+    position relative
+    &:after
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      height 1em
+      width 100%
+      background linear-gradient(180deg, #ffffff00 0, var(--color-recentposts-more-front))
+  &.active
+    .md
+      max-height none
+      &:after
+        visibility hidden
+    .p-codelib-more
+      background var(--color-link)
+      margin-top 2em
+      border-radius 1.25em
+    .codelib-more
+      display none
+    .codelib-less
+      display inline
+
+.p-codelib-more
+  font-size 0.85em
+  line-height 2.5
+  text-align center
+  cursor pointer
+  width 100%
+  background var(--color-recentposts-more-front)
+  color var(--color-recentposts-more-back)
+  border-radius 0 0 1.25em 1.25em
+
+.codelib-less
+  display none
+
+.p-codelib-list
+  > li:not(:first-child)
+    border-top 1px solid var(--color-clear)
+  > li.active
+    .codelib-cat:after
+      transform rotate(-135deg)
+      top 1.25em
+  a
+    color var(--color-codelib-text)
+    &:hover
+      text-decoration underline
+  @media (max-width: $app_mobile_width)
+    margin-bottom $gap * 2
+
+.codelib-cat
+  @media (min-width: $app_mobile_width_min)
+    padding 0 $gap * 6 0 ($gap * 4)
+  @media (max-width: $app_mobile_width)
+    padding 0 $gap * 3 0 ($gap * 2)
+  line-height 2.5
+  background var(--color-recentposts-more-front)
+  color var(--color-recentposts-more-back)
+  cursor pointer
+  overflow hidden
+  text-overflow ellipsis
+  position relative
+  &:after
+    content ''
+    display block
+    position absolute
+    @media (min-width: $app_mobile_width_min)
+      right $gap * 4
+    @media (max-width: $app_mobile_width)
+      right $gap * 2
+    top 0.95em
+    height 0.35em
+    width 0.35em
+    transform rotate(45deg)
+    border-right 0.1em solid
+    border-bottom 0.1em solid
+
+.codelib-inner
+  @media (min-width: $app_mobile_width_min)
+    padding 0 $gap * 4
+  @media (max-width: $app_mobile_width)
+    padding 0 $gap * 2
+  line-height 2.5
+  > li:not(:first-child)
+    border-top 1px solid var(--color-recentposts-more-front)
+  > li
+    text-overflow ellipsis
+    overflow hidden
+    white-space nowrap
+  i
+    margin-right 0.75em
+    color var(--color-codelib-text)
+
+@media (max-width: $app_mobile_width)
+  .p-codelib-caption
+    text-align center
+    i
+      display none
